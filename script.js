@@ -1,7 +1,7 @@
-let btnRandom = document.querySelector('button');
-let result = document.querySelector('h1');
+let btnRandom = document.querySelector("button");
+let result = document.querySelector("h1");
 
-let users = ['Mushoku Tensei', 'Kono Subarashii', 'Black Clover', 'We Never Learn', 'Go-toubun no Hanayome', 'Kaifuku Jutsushi', 'OreGairu', 'Kawaiikereba', 'Dragon Maid S', 'Tsuredere Children'];
+let masterpiece = ["Boku no Hero Academia", "Go-Tōbun no Hanayome", "Bokutachi wa Benkyou ga Dekinai", "Platinum End", "Tsuki to Laika to Nosferatu", "Fullmetal Alchemist", "To Love-Ru", "86", "GAMERS!", "Steins;Gate 0", "Sword Art Online", "Rakudai Kishi no Cavalry", "Sono Bisque Doll wa Koi wo Suru", "Dr. Stone", "Attack on Titan", "Akame ga Kill!", "Cowboy Bebop", " Demon Slayer", "No Game No Life", "One Punch-Man", "Back Street Girls: Gokudolls", "Death Note", "Kakegurui", "Erased", "Mahouka", "Mahouka Koukou no Rettousei", "Majo no Tabitabi", "Tokyo Revengers", "Seirei Gensouki: Spirit Chronicles", "Love of Kill", "Sakurada Reset", "Yu-No", "Taimadou Gakuen 35 Shiken Shoutai", "Parasyte", "Kuzu no Honkai", "Akashic Records of Bastard Magic Instructor ", "Kyuukyoku Shinka Shita Full Dive RPG ga Genjitsu Yorimo Kuso-Ge Dattara"];
 
 function getRandomNumber(min, max){
     let step1 = max - min + 1;
@@ -11,7 +11,7 @@ function getRandomNumber(min, max){
     return result;
 }
 
-btnRandom.addEventListener('click', () => {
-    let index = getRandomNumber(0, users.length - 1);
-    result.innerText = users[index];
+btnRandom.addEventListener("click", () => {
+    let index = getRandomNumber(0, masterpiece.length - 1);
+    result.innerText = masterpiece[index];
 }); 
